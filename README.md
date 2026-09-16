@@ -3,3 +3,6 @@ You must install https://github.com/nefarius/ViGEmBus/releases/tag/v1.22.0 first
 https://rust-lang.org/learn/get-started/
 
 Then your typical cargo run should do 
+
+
+Tested on Dragonshock Nebula Ultimate controllers
