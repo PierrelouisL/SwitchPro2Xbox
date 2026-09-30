@@ -38,7 +38,7 @@ struct DeviceAndTarget {
 }
 
 fn convert_bytes_to_controller_state(bytes: &[u8]) -> Option<ControllerState> {
-    if bytes[0] != 0x3F || bytes.len() != 64 {
+    if bytes.len() != 64 || bytes[0] != 0x3F {
         // Only 0x3F corresponds to controller input data, other are internal data, so we ignore them
         return None;
     }
